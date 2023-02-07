@@ -17,8 +17,6 @@ public class BookRepository {
         b1.setAuthor("황재호");
         b1.setPublisher("한빛미디어");
         b1.setUnitsInStock(1000);
-        b1.setTotalPages(288);
-        b1.setReleaseDate("2018/03/02");
         b1.setFilename("P1234.png");
         
         Book b2=new Book("a002", "[IT 모바일] 쉽게 배우는 자바 프로그래밍", 27000);
@@ -26,8 +24,6 @@ public class BookRepository {
         b2.setAuthor("우종중");
         b2.setPublisher("한빛미디어");
         b2.setUnitsInStock(1000);
-        b2.setTotalPages(692);
-        b2.setReleaseDate("2017/08/02");
         b2.setFilename("P1235.png");
         
         Book b3=new Book("a003", "[IT 모바일] 스프링4 입문", 27000);
@@ -35,8 +31,6 @@ public class BookRepository {
         b3.setAuthor("하세가와 유이치, 오오노 와타루, 토키 코헤이(권은철, 전민수)");
         b3.setPublisher("한빛미디어");
         b3.setUnitsInStock(1000);
-        b3.setTotalPages(520);
-        b3.setReleaseDate("2017/11/01");
         b3.setFilename("P1236.png");
         
         listOfBooks.add(b1);

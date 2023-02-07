@@ -3,21 +3,27 @@ package dto;
 public class Book {
     private String bookId;
     private String name;
-    private Integer unitPrice;
-    private String author;
+    private int price;
     private String description;
+    private String author;
     private String publisher;
-    private String category;
     private long unitsInStock;
-    private long totalPages;
-    private String releaseDate;
     private String condition;
     private String filename;
+    private int quantity; 	
 
     public Book() {
     	super();
     	// TODO Auto-generated constructor stub
     }
+    public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
     
     public String getFilename() {
 		return filename;
@@ -28,10 +34,10 @@ public class Book {
 	}
 
     
-    public Book(String bookId, String name, Integer unitPrice) {
-        this.bookId=bookId;
-        this.name=name;
-        this.unitPrice=unitPrice;
+    public Book(String bookId, String name, int price) {
+        this.bookId = bookId;
+        this.name = name;
+        this.price = price;
     }
  
     public String getAuthor() {
@@ -58,12 +64,12 @@ public class Book {
         this.name = name;
     }
  
-    public Integer getUnitPrice() {
-        return unitPrice;
+    public int getPrice() {
+        return price;
     }
  
-    public void setUnitPrice(Integer unitPrice) {
-    	this.unitPrice = unitPrice;
+    public void setPrice(int price) {
+    	this.price = price;
     }
  
     public String getDescription() {
@@ -82,13 +88,6 @@ public class Book {
         this.publisher = publisher;
     }
  
-    public String getCategory() {
-        return category;
-    }
- 
-    public void setCategory(String category) {
-        this.category = category;
-    }
  
     public long getUnitsInStock() {
         return unitsInStock;
@@ -97,22 +96,7 @@ public class Book {
     public void setUnitsInStock(long unitsInStock) {
         this.unitsInStock = unitsInStock;
     }
- 
-    public long getTotalPages() {
-        return totalPages;
-    }
- 
-    public void setTotalPages(long totalPages) {
-        this.totalPages = totalPages;
-    }
- 
-    public String getReleaseDate() {
-        return releaseDate;
-    }
- 
-    public void setReleaseDate(String releaseDate) {
-        this.releaseDate = releaseDate;
-    }
+
  
     public String getCondition() {
         return condition;

@@ -35,7 +35,7 @@
 				style="width: 100%;"/>
             <h3><%=book.getName()%></h3>
             <p><%=book.getDescription()%></p>
-            <p><%=book.getAuthor()+" | "+book.getPublisher()+" | "+book.getUnitPrice()%>원</p>
+            <p><%=book.getAuthor()+" | "+book.getPublisher()+" | "+book.getPrice()%>원</p>
             <p><a href = "./book.jsp?bookId=<%=book.getBookId() %>" class="btn btn-secondary"
 				role="button">도서 정보&raquo;</a></p>
         </div>

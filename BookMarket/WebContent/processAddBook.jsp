@@ -39,8 +39,6 @@ String description = "";
 String publisher = "";
 String category = "";
 String unitsInStock = "";
-String totalPages = "";
-String releaseDate = "";
 String condition = "";
 String fileName = "";
 
@@ -66,10 +64,6 @@ if(fieldName.equals("bookId")){
 	category = item.getString(encType);
 }else if(fieldName.equals("unitsInStock")){
 	unitsInStock = item.getString(encType);
-}else if(fieldName.equals("totalPages")){
-	totalPages = item.getString(encType);
-}else if(fieldName.equals("releaseDate")){
-	releaseDate = item.getString(encType);
 }else if(fieldName.equals("condition")){
 	condition = item.getString(encType);
 }
@@ -98,25 +92,17 @@ if(unitsInStock == null){
 }else
 	stock = Long.valueOf(unitsInStock);
 
-long total_Pages;
-if(totalPages == null){
-	total_Pages = 0;
-}else
-	total_Pages = Long.valueOf(totalPages);
 
 BookRepository dao = BookRepository.getInstance();
 
 Book newBook = new Book();
 newBook.setBookId(bookId);
 newBook.setName(name);
-newBook.setUnitPrice(price);
+newBook.setPrice(price);
 newBook.setAuthor(author);
 newBook.setDescription(description);
 newBook.setPublisher(publisher);
-newBook.setCategory(category);
 newBook.setUnitsInStock(stock);
-newBook.setTotalPages(total_Pages);
-newBook.setReleaseDate(releaseDate);
 newBook.setCondition(condition);
 newBook.setFilename(fileName);
 
